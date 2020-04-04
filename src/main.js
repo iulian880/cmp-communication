@@ -4,6 +4,7 @@ import Vue from 'vue'
 import App from './App.vue'
 
 export const eventBus = new Vue({
+  data: {},
   methods: {
     changeAge(age) {
       this.$emit('ageWasEdited', age)
